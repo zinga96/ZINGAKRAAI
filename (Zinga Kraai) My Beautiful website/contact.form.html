@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href='contact.css'/>
+    <title>Contact form</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+   <h1><b>Let'S  TalK</b></h1>
+      <div class="navbar">
+        <a href="Home.html">HOME</a>
+        <a href="M-Portfolio.html">PORTFOLIO</a>
+        <a href="services.html">SERVICES</a>
+        <a href="#contact.form">CONTACT</a>
+      </div>
+<body>
+    <p> Got any question? I would love to hear from you. <b>SEND</b> me a message<br> and i will respond as soon as possible.</p>
+  <form id="contact-form">
+    <div class="contact-form">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+      
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="write something.."
+        style="height:100px; width:400px"></textarea>
+        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+        <input type="submit" value="Submit">
+        </div>
+      </form>
+
+<!-- footer-->
+<div class="footer">
+    <p>ADDRESS<br>12 NTSHIYANE STREET ILITHA PARK KHAYELITSHA 7784</p>
+    <p>E-MAIL<br>zingakraai88@gmail.com </p>>
+    <p>Contact numbers<br>0638290985</p>
+
+ </div>
+ <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase.js"></script>
+ <script src="form.js"></script>
+</body>
+</html>
