@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <meta charset="UTF-8">
+<link rel='stylesheet' href='Portfolio.css'/>
+<title>MY PORTFOLIO</title>
+    <h1>WELCOME TO MY PORTFOLIO</h1>
+ <div class="navbar">
+   <a href="Home.html">HOME</a>
+    <a href="#Portfolio">PORTFOLIO</a>
+       <a href="Contact.html">CONTACT</a> 
+        <a href="Gallery.html">GALLERY</a>
+  </div>
+</head>
+<body>
+<!--THIS DIV BOX IS THE CREATION OF THE SLIDESHOW CONTAINING MY PICTURES-->
+<div class="slideshow-container">
+<!--EACH PICTURE HAS ITS OWN DIV BOX.-->
+<div class="mySlides fade">
+    <img src="I-COLLEGE.jpeg" width="500px" height="500px">
+    <div class="text">TEAM WORK</div>
+</div>
+  <div class="mySlides fade">
+    <img src="I-COLLEGE2.jpeg" width="500px" height="500px">
+    <div class="text">TECH TEAM</div>
+</div>
+   <div class="mySlides fade">
+    <img src="I-COLLEGE3.jpeg" width="500px" height="500px">
+    <div class="text">PROGRAMMERS</div>
+</div>
+   <div class="mySlides fade">
+     <img src="I-COLLEGE4.jpeg" width="500px" height="500px">
+     <div class="text">I-COLLEGE CAPE TOWN</div>
+</div>
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+</div>
+<!--THE CODE BELOW IS THE JAVASCRIPT CODE THAT ENHANCES THE DISPLAY OF THE SLIDESHOW.-->
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+slides[slideIndex-1].style.display = "block";
+setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+</div>
+<div class= 'portfolio'>
+<h2>CHECK out my LAST work</h2><br><br>
+<p><a href="https://zeephelo.netlify.com/home" target="_blank">Click to View Mzamomtsha Primary School website</a> and check my latest work.<br><b>Thanks;)</b></p><br><br>
+<p1><b>Hello there My name is Zinga kraai. i'm a programmer.<br> I love solving problems.
+whether it's finding the most elegant way to write a line of code, i love challenges,<br>finding a way and discovering solutions.<br>
+I am a good problem solver as i was doing my support skill that's where i realised<br> my abilities i've studied (technical support)
+in I-college Cape town.<br>
+currently doing software skills(Html, Css& Java script ) with CAPACITI.</b></p1><br>
+<h3>EDUCATION</h3>
+<p2><b>I obtained my senior certificate which is Grade 12 in 2013.<br>
+Choose to take technical route by applying at I-college for my support skills<br>
+Currently with Capaciti doing an internship on coding side HTML,CSS AND JAVASCRIPT.</b>
+</p2>
+<h1>I'm passionate about building great products that make people's lives easier.<br>
+I am excited meeting you.
+</h1>
+<!-- footer-->
+<div class="footer">
+<p>ADDRESS<br>12 NTSHIYANE STREET ILITHA PARK KHAYELITSHA 7784</p>
+<p>E-MAIL<br>zingakraai88@gmail.com </p>>
+<p>Contact number<br>0638290985</p>
+</div>
+</body>
+</div>
+</html>
